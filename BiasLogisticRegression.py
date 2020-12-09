@@ -29,7 +29,7 @@ class BinaryBiasLR():
         self.random_state = random_state
     
     '''
-    This version including the cost function and gradient is absolutely based on eassy!!!
+    The cost function and gradient is absolutely based on eassy
     
     ###Parameter:
     lambda_l2: only this method
@@ -165,7 +165,7 @@ x = np.array([[3,2,1],
               [1,3,2],
               [1,3,2],
               [1,3,2]])
-y = np.array([1,1,1,1,-1,-1,-1,-1]).reshape(-1,1)
+y = np.array([1,1,1,1,-1,-1,-1,-1])
 
 lr = BinaryBiasLR(learning_rate=0.01,num_iteration=500,lambda_l2 = 0.001,
                   P_pre = 0.1,random_state = 2020,verbose = 1)
